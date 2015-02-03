@@ -69,6 +69,7 @@ var dinnerMenu = new Menu(
     guac,
     burrito]
 );
+
 var pepes = new Restaurant(
     "Pepes", "Authentic Mexican Cuisine", dinnerMenu
 );
@@ -104,11 +105,11 @@ Plate.prototype.isCitrusFree = function () {
 
 
 Order.prototype.toString = function () {
-    return this.plates;
+    return this.plates.toString();
 };
 
 Menu.prototype.toString = function () {
-    return this.plates;
+    return this.plates.toString();
 };
 
 Restaurant.prototype.toString = function () {
@@ -119,11 +120,11 @@ Customer.prototype.toString = function () {
     return this.diet;
 };
 
+
+
 // console.log(dinnerMenu);
-// console.log(pepes);
+console.log( pepes.toString() );
 
-
-console.log(pepes.toString);
 // class_name.prototype.method_name = function (first_argument) {
 //     // body...
 // };
